@@ -1,6 +1,6 @@
 const { application } = require("express");
 let express=require("express")
-var fs = require("fs");
+
 let app=express()
 app.use(express.json());
 let port=8000
