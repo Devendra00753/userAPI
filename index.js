@@ -14,7 +14,6 @@ let employee=[
 
 
 app.get('/empd',(req,res)=>{
-    console.log("done")
     res.send(employee)
 })
 
