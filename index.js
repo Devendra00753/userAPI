@@ -22,7 +22,7 @@ app.get('/empdetails/:id',(req,res)=>{
     res.send(emp);
 })
 
-app.post('/adddata',(req,res)=>{
+app.post('/post',(req,res)=>{
     const{empName,id}=req.body;
     console.log(empName,id);
     res.send('data stored')
