@@ -29,12 +29,7 @@ app.post('/post',(req,res)=>{
     
 })
 
-app.delete('/del/:id',(req,res)=>{
-    let emp=employee.filter(c=> c.id.toString()===req.params.id);
-    res.send(emp);
 
-    console.log("delete")
-});
 
 app.listen(port,function(){
     console.log(`Server started on port ${port}`)
