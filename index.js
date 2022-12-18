@@ -3,7 +3,7 @@ let express=require("express")
 
 let app=express()
 app.use(express.json());
-let port=8080
+let port=3000
 
 let employee=[
     {empName: 'Abc',id:1},
