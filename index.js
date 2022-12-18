@@ -3,7 +3,7 @@ let express=require("express")
 
 let app=express()
 app.use(express.json());
-let port=8000
+let port=3000
 
 let employee=[
     {empName: 'Abc',id:1},
@@ -29,6 +29,11 @@ app.post('/post',(req,res)=>{
     res.send('data stored')
     
 })
+
+app.put('/put',(req,res)=>{
+    return("update")
+})
+
 app.delete('/del/:id',(req,res)=>{
     let emp=employee.filter(c=> c.id.toString()===req.params.id);
     res.send(emp);
